@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="../img/mainIcon.jpg">
+</head>
+<body>
+    <div class="header" id="header">
+        <ul>
+            <li>
+                <div class="titleName" id="titleName">< SD ></div>
+            </li>
+            <li>
+                <a href="#" onclick="openModal('modal-about')" id="about">About me</a>
+                <div id="modal-about" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-about')">&times;</span>
+                        <div class="aboutTitle">About me</div>
+                        <div class="aboutMain">
+                            <p>I am a front-end web developer, constantly developing my professional skills and mastering new technologies in my field.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="openModal('modal-skills')" id="skills">My skills</a>
+                <div id="modal-skills" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-skills')">&times;</span>
+                        <div class="titleSkills">
+                            <h1>My skills</h1>
+                        </div>
+                        <div class="skillsIcon">
+                            <img src="../icon/html.png" alt="html">
+                            <img src="../icon/css-3.png" alt="css">
+                            <img src="../icon/java-script.png" alt="java">
+                            <img src="../icon/typescript.png" alt="typescript">
+                            <img src="../icon/atom.png" alt="atom">
+                            <img src="../icon/docker.png" alt="docker">
+                            <img src="../icon/python.png" alt="python">
+                            <img src="../icon/django.png" alt="django">
+                            <img src="../icon/sql-file-format.png" alt="sql">
+                            <img src="../icon/github.png" alt="github">
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="openModal('modal-projects')" id="contacts">My contacts</a>
+                <div id="modal-projects" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('modal-projects')">&times;</span>
+                        <div class="titleContacts">
+                            <h1>My contacts</h1>
+                            <div class="contactsIcon">
+                                <a href="https://github.com/KITIK288">
+                                    <img src="../icon/telegram.png" alt="telegram">
+                                </a>
+                                <a href="#">
+                                    <img src="../icon/linkedin.png" alt="linkedin">
+                                </a>
+                                <a href="#">
+                                    <img src="../icon/github.png" alt="github">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="themeChangeButton" onclick="themeChange()">
+                    <button><img src="../icon/free-icon-night-mode-12377255.png" alt="icon" class="themeChangeIcon"></button>
+                </div>
+            </li>
+            <li>
+                <div class="musicButton" onclick="music()">
+                    <button><img src="../icon/free-icon-music-5577489.png" alt="icon" class="musicIcon"></button>
+                </div>
+            </li>
+            <li>
+                <div class="themeChangeButton" onclick="translatePage()">
+                    <button><img src="../icon/translate.png" alt="icon" class="translateButton"></button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main" id="main">
+        <div class="mainTitle" id="mainTitle">
+            <div class="name">
+                <h1 id="nameCreator">Svyatoslav Danilov</h1>
+            </div>
+            <div class="profession">
+                <h2 id="prof">frontend web developer</h2>
+            </div>
+        </div>
+        <div class="arrowDown" id="arrowDown">
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div class="projectsTitle">
+            <h1 id="pt0">My projects</h1>
+        </div>
+        <div class="projectsTitle">
+            <h1 id="pt1">Password generator in veb</h1>
+        </div>
+        <div class="myProject">
+            <div class="projectImg">
+                <img src="../img/img3.png" alt="" class="oneImg">
+            </div>
+            <div class="startButton">
+                <a href="http://109.194.51.67/~sv/password%20generator/html/main.html">
+                    <button class="start" id="b1"><i class="fa-solid fa-eye"></i></button>
+                </a>
+            </div>
+        </div>
+        <div class="projectsTitle">
+            <h1 id="pt2">Registration form</h1>
+        </div>
+        <div class="myProject">
+            <div class="projectImg">
+                <img src="../img/img5.png" alt="" class="oneImg">
+            </div>
+            <div class="startButton">
+                <a href="http://109.194.51.67/~sv/nice_registration_form/html/registration.html">
+                    <button class="start" id="b2"><i class="fa-solid fa-eye"></i></button>
+                </a>
+            </div>
+        </div><div class="projectsTitle">
+            <h1 id="pt3">Registration form</h1>
+        </div>
+        <div class="myProject">
+            <div class="projectImg">
+                <img src="../img/img6.png" alt="" class="oneImg">
+            </div>
+            <div class="startButton">
+                <a href="http://109.194.51.67/~sv/High%20level%20registration%20form/html/main.html">
+                    <button class="start" id="b3"><i class="fa-solid fa-eye"></i></button>
+                </a>
+            </div>
+        </div>
+        <div class="projectsTitle">
+            <h1 id="pt4">Todo list</h1>
+        </div>
+        <div class="myProject">
+            <div class="projectImg">
+                <img src="../img/img8.png" alt="" class="oneImg">
+            </div>
+        </div>
+        <div class="startButton">
+            <a href="http://109.194.51.67/~sv/to%20do%20list/main/main.html">
+                <button class="start" id="b4"><i class="fa-solid fa-eye"></i></button>
+            </a>
+        </div>
+        <div class="projectsTitle">
+            <h1 id="pt5">Snake game</h1>
+        </div>
+        <div class="myProject">
+            <div class="projectImg">
+                <img src="../img/img9.png" alt="" class="oneImg">
+            </div>
+        </div>
+        <div class="startButton">
+            <a href="http://109.194.51.67/~sv/snake%20game/main/main.html">
+                <button class="start" id="b5"><i class="fa-solid fa-eye"></i></button>
+            </a>
+        </div>
+        <div class="projectsTitle">
+            <h1 id="Warhammer">Online roster builder for Warhammer 40000</h1>
+        </div>
+        <div class="myProject">
+            <div class="projectImg">
+                <img src="../img/img1.png" alt="">
+                <img src="../img/img2.png" alt="">
+            </div>
+            <div class="startButton">
+                <a href="http://109.194.51.67/~sv/roster_bilder/portal_page/portal.html">
+                    <button class="start"><i class="fa-solid fa-eye"></i></button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<audio src="../audio/paganini-la-campanella.-rondo.mp3" id="audio"></audio>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/3fe5caa1fd.js" crossorigin="anonymous"></script>
+</html>

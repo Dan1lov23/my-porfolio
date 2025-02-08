@@ -1,0 +1,426 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.header {
+    background-color: #1E1E1E;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+
+.header ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.header li {
+    margin: 0 15px;
+}
+
+.header a {
+    margin-left: 80px;
+    text-decoration: none;
+    color: LimeGreen;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.titleName {
+    color: limeGreen;
+    font-size: 28px;
+    margin-left: -420px;
+}
+
+.header a:hover {
+    color: LawnGreen;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    display: inline;
+}
+
+.TitleHeader {
+    color: LimeGreen;
+    margin-left: -600px;
+}
+
+.themeChangeButton {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: -5px;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.themeChangeButton button {
+    background-color: LimeGreen;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.themeChangeButton button:hover {
+    background-color: LawnGreen;
+    transform: scale(1.05);
+}
+
+.themeChangeButton button:focus {
+    outline: none;
+}
+
+.musicButton {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: -5px;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.musicButton button {
+    background-color: LimeGreen;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.musicButton button:hover {
+    background-color: LawnGreen;
+    transform: scale(1.05);
+}
+
+.musicButton button:focus {
+    outline: none;
+}
+
+.translateButton button {
+    background-color: LimeGreen;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.translateButton button:hover {
+    background-color: LawnGreen;
+    transform: scale(1.05);
+}
+
+.translateButton button:focus {
+    outline: none;
+}
+
+.name {
+    color: LimeGreen;
+    font-size: 30px;
+    margin-top: 150px;
+    margin-left: 60px;
+}
+
+.profession {
+    color: LimeGreen;
+    font-size: 25px;
+    margin-left: 65px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background: #2D2D2D;
+    padding: 25px;
+    border-radius: 10px;
+    transform: translateY(-50px) scale(0.9);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: relative;
+    img {
+        margin-top: 40px;
+        width: 80px;
+        height: 80px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.modal.active .modal-content {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: limegreen    ;
+}
+
+.close:hover {
+    color: lawngreen;
+    transform: rotate(90deg);
+}
+
+.arrowDown {
+    text-align: center;
+    margin-top: 250px;
+    i {
+        font-size: 125px;
+        color: limegreen ;
+    }
+    i:hover {
+        color: lawngreen;
+    }
+}
+
+.projectsTitle {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+    color: LimeGreen;
+}
+
+.titleSkills {
+    color: LimeGreen;
+}
+
+.skillsIcon {
+    margin-top: 20px;
+}
+
+.titleContacts {
+    color: LimeGreen;
+}
+
+.contactsIcon {
+    display: flex;
+    img {
+        margin-left: -20px;
+    }
+}
+
+.aboutTitle {
+    color: LimeGreen;
+}
+
+.aboutMain {
+    p {
+        line-height: 1.5;
+        font-size: 26px;
+    }
+}
+
+.projectImg img {
+    width: 727px;
+    height: 500px;
+}
+
+.startButton {
+    text-align: center;
+}
+
+.startButton button {
+    margin-top: 60px;
+    background-color: LimeGreen;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 20px 120px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.startButton button:hover {
+    background-color: LawnGreen;
+    transform: scale(1.05);
+}
+
+.myProject {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.main {
+    img {
+        border: 2px solid white;
+        border-radius: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px; /* Уменьшение отступов для компактного отображения */
+        display: flex; /* Используем flexbox для лучшего выравнивания */
+        flex-direction: column; /* Строки в столбец для маленьких экранов */
+        align-items: center; /* Центрируем содержимое */
+    }
+
+    .header a {
+        font-size: 18px; /* Уменьшение размера шрифта */
+        padding: 5px; /* Добавление небольших отступов */
+    }
+
+    .header ul {
+        flex-direction: row; /* Размещаем пункты меню в одну строку */
+        justify-content: center; /* Центрируем по горизонтали */
+        padding: 0; /* Убираем отступы */
+        margin: 0; /* Убираем отступы */
+        list-style-type: none; /* Убираем маркеры списка */
+    }
+
+    .header li {
+        margin: 0 10px; /* Уменьшение отступов между пунктами */
+    }
+
+    .name, .profession {
+        margin-left: 0;
+        text-align: center; /* Центрируем текст */
+        font-size: 20px; /* Уменьшаем размер шрифта для мобильных устройств */
+    }
+
+    .musicButton, .themeChangeButton {
+        margin-left: 0;
+        margin-top: 5px; /* Небольшой отступ между кнопками */
+        display: inline-block; /* Убедимся, что кнопки выровнены в ряд */
+    }
+
+    .startButton button {
+        padding: 10px 30px; /* Уменьшение отступов для кнопки на мобильных */
+        font-size: 18px; /* Уменьшение размера шрифта для кнопки */
+    }
+
+    .projectImg img {
+        width: auto;
+        max-width: 100%; /* Изображения адаптируются к размеру контейнера */
+        height: auto;
+    }
+
+    /* Дополнительные изменения для улучшения адаптивности */
+    .header h1 {
+        font-size: 24px; /* Уменьшаем размер заголовка для мобильных устройств */
+    }
+
+    .header p {
+        font-size: 16px; /* Уменьшение размера для подзаголовков или описаний */
+        margin: 5px 0; /* Небольшие отступы от и до текста */
+    }
+}
+
+@media (max-width: 1920px) {
+
+    .titleName {
+        margin-left: 10px;
+    }
+
+    .header ul {
+        margin-left: 0; /* Убираем левый отступ для экранов 1200px и меньше */
+    }
+
+    .header a {
+        font-size: 28px; /* Уменьшение размера текста для ссылок */
+    }
+
+    .titleName {
+        font-size: 30px; /* Уменьшаем размер заголовка */
+    }
+
+    .name, .profession {
+        font-size: 28px; /* Уменьшаем размер текста */
+    }
+    .themeChangeButton, .musicButton, .musicButton {
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1920px) {
+    .header a {
+        font-size: 26px; /* Дополнительное уменьшение размера текста для ссылок */
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .titleName {
+        margin-left: 0; /* Убираем отрицательный отступ */
+        font-size: 28px; /* Уменьшаем размер заголовка */
+    }
+
+    .translateButton, .themeChangeButton, .musicButton {
+        justify-content: center; /* Центруем кнопки */
+        margin-left: 0; /* Убираем левый отступ */
+    }
+
+    .modal-content {
+        max-width: 90%; /* Уменьшаем максимальную ширину модального окна */
+    }
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+    .titleName {
+        margin-right: 400px;
+    }
+    .arrowDown {
+        margin-top: 400px;
+    }
+    .themeChangeButton, .musicButton {
+        margin-left: 150px;
+    }
+}
