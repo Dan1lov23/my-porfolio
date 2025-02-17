@@ -1,6 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
+    a {
+        text-decoration: none;
+    }
 }
 
 body {
@@ -13,7 +16,6 @@ body {
     background-color: #1E1E1E;
     padding: 10px;
     text-align: center;
-    margin: 0;
     width: 100%;
 }
 
@@ -26,7 +28,7 @@ body {
 }
 
 .header li {
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .header a {
@@ -40,7 +42,7 @@ body {
 .titleName {
     color: limeGreen;
     font-size: 28px;
-    margin-left: -420px;
+    margin-right: 100px;
 }
 
 .header a:hover {
@@ -70,6 +72,7 @@ body {
 }
 
 .themeChangeButton button {
+    margin-left: 70px;
     background-color: LimeGreen;
     color: white;
     border: none;
@@ -84,6 +87,10 @@ body {
 .themeChangeButton button:hover {
     background-color: LawnGreen;
     transform: scale(1.05);
+}
+
+.contactsIcon {
+    justify-content: center;
 }
 
 .themeChangeButton button:focus {
@@ -102,6 +109,7 @@ body {
 }
 
 .musicButton button {
+    margin-left: 70px;
     background-color: LimeGreen;
     color: white;
     border: none;
@@ -277,6 +285,8 @@ body {
 }
 
 .startButton button {
+    margin-right: 20px;
+    margin-left: 20px;
     margin-top: 60px;
     background-color: LimeGreen;
     color: white;
@@ -386,41 +396,25 @@ body {
     .name, .profession {
         font-size: 28px; /* Уменьшаем размер текста */
     }
-    .themeChangeButton, .musicButton, .musicButton {
+    .themeChangeButton, .musicButton {
         margin-left: 100px;
     }
 }
 
 @media (min-width: 1080px) and (max-width: 1920px) {
     .header a {
-        font-size: 26px; /* Дополнительное уменьшение размера текста для ссылок */
-        margin-left: 20px;
-        margin-right: 20px;
+        font-size: 26px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     .titleName {
         margin-left: 0; /* Убираем отрицательный отступ */
-        font-size: 28px; /* Уменьшаем размер заголовка */
+        font-size: 22px; /* Уменьшаем размер заголовка */
     }
 
     .translateButton, .themeChangeButton, .musicButton {
         justify-content: center; /* Центруем кнопки */
         margin-left: 0; /* Убираем левый отступ */
-    }
-
-    .modal-content {
-        max-width: 90%; /* Уменьшаем максимальную ширину модального окна */
-    }
-}
-
-@media (min-width: 1920px) and (max-width: 2560px) {
-    .titleName {
-        margin-right: 400px;
-    }
-    .arrowDown {
-        margin-top: 400px;
-    }
-    .themeChangeButton, .musicButton {
-        margin-left: 150px;
     }
 }

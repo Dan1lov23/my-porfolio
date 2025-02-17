@@ -115,6 +115,9 @@ let translateCheck = 2;
 
 function translatePage() {
     if (translateCheck % 2 === 0) {
+        document.getElementById('aboutModal').innerHTML = 'О мне';
+        document.getElementById('skillsModal').innerHTML = 'Навыки';
+        document.getElementById('contactsModal').innerHTML = 'Контакты';
         document.getElementById('about').innerHTML = 'О мне'
         document.getElementById('skills').innerHTML = 'Мои навыки'
         document.getElementById('contacts').innerHTML = 'Контакты'
@@ -126,8 +129,13 @@ function translatePage() {
         document.getElementById('pt3').innerHTML = 'Форма регистарции';
         document.getElementById('pt4').innerHTML = 'Список дел';
         document.getElementById('pt5').innerHTML = 'Игра змейка';
+        document.getElementById('pt6').innerHTML = 'Игра угадай слово';
+        document.getElementById('pt7').innerHTML = 'Онлайн ковертаор криптовалют';
 
     } else {
+        document.getElementById('aboutModal').innerHTML = 'About me';
+        document.getElementById('skillsModal').innerHTML = 'Skills';
+        document.getElementById('contactsModal').innerHTML = 'Contacts';
         document.getElementById('about').innerHTML = 'About me';
         document.getElementById('skills').innerHTML = 'My skills';
         document.getElementById('contacts').innerHTML = 'My contacts'
@@ -139,6 +147,8 @@ function translatePage() {
         document.getElementById('pt3').innerHTML = 'Registration form';
         document.getElementById('pt4').innerHTML = 'Todo list';
         document.getElementById('pt5').innerHTML = 'Snake game';
+        document.getElementById('pt6').innerHTML = 'Guess the word game';
+        document.getElementById('pt7').innerHTML = 'Online cryptocurrency course';
     }
     translateCheck++;
 }
