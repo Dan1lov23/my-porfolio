@@ -109,8 +109,6 @@ function themeChange() {
     check++;
 }
 
-//http://109.194.51.67/~sv/professional%20portfolio/main/main.html
-
 let translateCheck = 2;
 
 function translatePage() {
@@ -152,3 +150,6 @@ function translatePage() {
     }
     translateCheck++;
 }
+
+
+// ссылка на сайт - http://109.194.51.67/~sv/professional%20portfolio/main/main.html
