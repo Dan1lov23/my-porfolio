@@ -76,7 +76,7 @@ body {
     background-color: LimeGreen;
     color: white;
     border: none;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
@@ -113,7 +113,7 @@ body {
     background-color: LimeGreen;
     color: white;
     border: none;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
@@ -323,11 +323,11 @@ body {
     }
 
     .header a {
-        font-size: 18px; /* Уменьшаем размер шрифта для ссылок */
+        font-size: 18px;
     }
 
     .titleName {
-        font-size: 22px; /* Снижаем размер заголовка */
+        font-size: 22px;
         margin-right: 0;
     }
 
@@ -470,11 +470,11 @@ body {
     }
 
     .name {
-        font-size: 38px; /* Размер имени для десктопов */
+        font-size: 38px;
     }
 
     .profession {
-        font-size: 28px; /* Размер профессионального заголовка для десктопов */
+        font-size: 28px;
     }
 
     .arrowDown {
@@ -491,8 +491,8 @@ body {
 
     .projectImg img {
         text-align: center;
-        width: 720px; /* Ширина изображений для десктопов */
-        height: 700px; /* Высота изображений для десктопов */
+        width: 710px; /* Ширина изображений для десктопов */
+        height: 510px; /* Высота изображений для десктопов */
     }
 
     .projectsTitle {
