@@ -417,20 +417,35 @@ body {
     }
 }
 
-@media (min-width: 2560px) and (min-height: 1440px) {
-    body {
-        width: 2250px;
+@media (min-width: 2560px) {
+    .header {
+        width: 2560px;
     }
 }
 
-@media (min-width: 469px) {
+@media (min-width: 1920px) {
+    .header {
+        width: 1920px;
+    }
+    .main {
+        width: 1920px;
+    }
+    .header .titleName {
+        margin-right: 325px;
+    }
+    .header .button {
+        margin-left: 185px;
+    }
+}
 
+
+@media (max-width: 1980px) {
     .header {
         height: 120px;
     }
 
     body {
-        width: 1500px;
+        width: 1450px;
     }
     .header button {
         margin-left: 80px;
@@ -444,13 +459,14 @@ body {
 
     .header a {
         font-size: 44px; /* Размер шрифта для ссылок на десктопах */
-        margin-left: 60px;
+        margin-left: 38px;
     }
 
     .titleName {
+        text-align: right;
         font-size: 34px; /* Размер заголовка для десктопов */
         margin-top: 7px;
-        margin-right: 1px;
+        margin-right: 10px;
     }
 
     .name {
