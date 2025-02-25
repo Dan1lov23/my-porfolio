@@ -338,7 +338,7 @@ body {
     }
 
     .profession {
-        font-size: 18px; /* Снижаем размер профессионального заголовка */
+        font-size: 18px;
         margin-left: 20px;
     }
 
@@ -368,52 +368,51 @@ body {
     }
 
     .arrowDown i {
-        font-size: 60px; /* Уменьшаем размер стрелки вниз */
+        font-size: 60px;
     }
 }
 
-/* Адаптация для планшетов (от 481px до 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
     .header ul {
         flex-direction: row;
-        margin-left: 0; /* Убираем выравнивание по левому краю */
+        margin-left: 0;
     }
 
     .header a {
-        font-size: 20px; /* Уменьшаем размер шрифта для ссылок */
+        font-size: 20px;
     }
 
     .titleName {
-        font-size: 26px; /* Увеличиваем размер заголовка */
+        font-size: 26px;
         margin-right: 0;
     }
 
     .name {
-        font-size: 26px; /* Увеличиваем размер текста имени */
+        font-size: 26px;
     }
 
     .profession {
-        font-size: 22px; /* Увеличиваем размер профессионального заголовка */
+        font-size: 22px;
     }
 
     .modal-content {
-        padding: 15px; /* Увеличиваем внутренние отступы модального окна */
-        width: 80%; /* Увеличиваем ширину модального окна */
+        padding: 15px;
+        width: 80%;
     }
 
     .projectsTitle {
-        font-size: 26px; /* Увеличиваем размер заголовка проектов */
+        font-size: 26px;
     }
 
     .themeChangeButton button,
     .musicButton button,
     .translateButton button {
-        font-size: 16px; /* Увеличиваем шрифт кнопок */
-        padding: 8px 16px; /* Увеличиваем отступы кнопок */
+        font-size: 16px;
+        padding: 8px 16px;
     }
 
     .arrowDown i {
-        font-size: 80px; /* Увеличиваем размер стрелки вниз */
+        font-size: 80px;
     }
 }
 
@@ -458,15 +457,15 @@ body {
     }
 
     .header a {
-        font-size: 44px; /* Размер шрифта для ссылок на десктопах */
+        font-size: 44px;
         margin-left: 38px;
     }
 
     .titleName {
         text-align: right;
-        font-size: 34px; /* Размер заголовка для десктопов */
+        font-size: 34px;
         margin-top: 7px;
-        margin-right: 10px;
+        margin-right: -30px;
     }
 
     .name {
@@ -486,17 +485,17 @@ body {
     }
 
     .modal-content {
-        max-width: 600px; /* Максимальная ширина модального окна для десктопов */
+        max-width: 600px;
     }
 
     .projectImg img {
         text-align: center;
-        width: 710px; /* Ширина изображений для десктопов */
-        height: 510px; /* Высота изображений для десктопов */
+        width: 710px;
+        height: 510px;
     }
 
     .projectsTitle {
-        font-size: 34px; /* Размер заголовка проектов для десктопов */
+        font-size: 34px;
     }
 
     .startButton {

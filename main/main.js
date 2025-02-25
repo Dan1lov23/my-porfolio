@@ -129,6 +129,7 @@ function translatePage() {
         document.getElementById('pt5').innerHTML = 'Игра змейка';
         document.getElementById('pt6').innerHTML = 'Игра угадай слово';
         document.getElementById('pt7').innerHTML = 'Онлайн ковертаор криптовалют';
+        document.getElementById('ptCalc').innerHTML = 'Калькулятор';
 
     } else {
         document.getElementById('aboutModal').innerHTML = 'About me';
@@ -147,6 +148,7 @@ function translatePage() {
         document.getElementById('pt5').innerHTML = 'Snake game';
         document.getElementById('pt6').innerHTML = 'Guess the word game';
         document.getElementById('pt7').innerHTML = 'Online cryptocurrency course';
+        document.getElementById('ptCalc').innerHTML = 'Calculator';
     }
     translateCheck++;
 }
