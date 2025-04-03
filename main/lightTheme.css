@@ -1,0 +1,507 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    a {
+        text-decoration: none;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: white;
+}
+
+.header {
+    background-color: #1E1E1E;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.header ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.header li {
+    margin: 0 10px;
+}
+
+.header a {
+    margin-left: 80px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.titleName {
+    color: white;
+    font-size: 28px;
+    margin-right: 100px;
+}
+
+.header a:hover {
+    color: grey;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    display: inline;
+}
+
+.TitleHeader {
+    color: black;
+    margin-left: -600px;
+}
+
+.themeChangeButton {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: -5px;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.themeChangeButton button {
+    margin-left: 70px;
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.themeChangeButton button:hover {
+    background-color: grey;
+    transform: scale(1.05);
+}
+
+.contactsIcon {
+    justify-content: center;
+}
+
+.themeChangeButton button:focus {
+    outline: none;
+}
+
+.musicButton {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: -5px;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.musicButton button {
+    margin-left: 70px;
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.musicButton button:hover {
+    background-color: grey;
+    transform: scale(1.05);
+}
+
+.musicButton button:focus {
+    outline: none;
+}
+
+.translateButton button {
+    background-color: grexy;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.translateButton button:hover {
+    background-color: grey;
+    transform: scale(1.05);
+}
+
+.translateButton button:focus {
+    outline: none;
+}
+
+.name {
+    color: black;
+    font-size: 30px;
+    margin-top: 150px;
+    margin-left: 60px;
+}
+
+.profession {
+    color: black;
+    font-size: 25px;
+    margin-left: 65px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+    background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background: #2D2D2D;
+    padding: 25px;
+    border-radius: 10px;
+    transform: translateY(-50px) scale(0.9);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: relative;
+    img {
+        margin-top: 40px;
+        width: 80px;
+        height: 80px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.modal.active .modal-content {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 32px;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: black;
+}
+
+.close:hover {
+    color: grey;
+    transform: rotate(90deg);
+}
+
+.arrowDown {
+    text-align: center;
+    margin-top: 250px;
+    i {
+        font-size: 125px;
+        color: black ;
+    }
+    i:hover {
+        color: grey;
+    }
+}
+
+.projectsTitle {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+    color: black;
+}
+
+.titleSkills {
+    color: black;
+}
+
+.skillsIcon {
+    margin-top: 20px;
+}
+
+.titleContacts {
+    color: black;
+}
+
+.contactsIcon {
+    display: flex;
+    img {
+        margin-left: -20px;
+    }
+}
+
+.aboutTitle {
+    color: black;
+}
+
+.aboutMain {
+    p {
+        line-height: 1.5;
+        font-size: 26px;
+    }
+}
+
+.projectImg img {
+    width: 727px;
+    height: 500px;
+}
+
+.startButton {
+    text-align: center;
+}
+
+.startButton button {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 60px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 20px 120px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.startButton button:hover {
+    background-color: grey;
+    transform: scale(1.05);
+}
+
+.myProject {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.main {
+    img {
+        border: 2px solid black;
+        border-radius: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .header a {
+        font-size: 18px;
+    }
+
+    .titleName {
+        font-size: 22px;
+        margin-right: 0;
+    }
+
+    .name {
+        font-size: 22px;
+        margin-top: 100px;
+        margin-left: 20px; /* Уменьшаем отступы */
+    }
+
+    .profession {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .modal-content {
+        padding: 10px; /* Уменьшаем внутренние отступы модального окна */
+        width: 90%;
+    }
+
+    .projectImg img {
+        width: 100%; /* Ширина изображения подстраивается под экран */
+        height: auto; /* Высота автоматическая для сохранения пропорций */
+    }
+
+    .aboutMain p {
+        font-size: 18px; /* Уменьшаем размер шрифта в параграфах */
+    }
+
+    .projectsTitle {
+        font-size: 22px; /* Уменьшаем размер заголовка проектов */
+    }
+
+    .themeChangeButton button,
+    .musicButton button,
+    .translateButton button {
+        font-size: 14px; /* Уменьшаем шрифт кнопок */
+        padding: 6px 12px; /* Уменьшаем отступы кнопок */
+    }
+
+    .arrowDown i {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .header ul {
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    .header a {
+        font-size: 20px;
+    }
+
+    .titleName {
+        font-size: 26px;
+        margin-right: 0;
+    }
+
+    .name {
+        font-size: 26px;
+    }
+
+    .profession {
+        font-size: 22px;
+    }
+
+    .modal-content {
+        padding: 15px;
+        width: 80%;
+    }
+
+    .projectsTitle {
+        font-size: 26px;
+    }
+
+    .themeChangeButton button,
+    .musicButton button,
+    .translateButton button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .arrowDown i {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .header {
+        width: 2560px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .header {
+        width: 1920px;
+    }
+    .main {
+        width: 1920px;
+    }
+    .header .titleName {
+        margin-right: 325px;
+    }
+    .header .button {
+        margin-left: 185px;
+    }
+}
+
+
+@media (max-width: 1980px) {
+    .header {
+        height: 120px;
+    }
+
+    body {
+        width: 1450px;
+    }
+    .header button {
+        margin-left: 80px;
+        width: 60px;
+        height: 60px;
+    }
+    .header ul {
+        margin-top: 35px;
+        margin-left: -60px;
+    }
+
+    .header a {
+        font-size: 44px;
+        margin-left: 38px;
+    }
+
+    .titleName {
+        text-align: right;
+        font-size: 34px;
+        margin-top: 7px;
+        margin-right: -30px;
+    }
+
+    .name {
+        font-size: 38px;
+    }
+
+    .profession {
+        font-size: 28px;
+    }
+
+    .arrowDown {
+        text-align: center;
+        i {
+            margin-top: -80px;
+            font-size: 160px;
+        }
+    }
+
+    .modal-content {
+        max-width: 600px;
+    }
+
+    .projectImg img {
+        text-align: center;
+        width: 710px;
+        height: 510px;
+    }
+
+    .projectsTitle {
+        font-size: 34px;
+    }
+
+    .startButton {
+        button {
+            width: 300px;
+            height: 80px;
+        }
+    }
+}
