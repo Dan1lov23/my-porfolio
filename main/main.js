@@ -34,77 +34,16 @@ window.onclick = function(event) {
     }
 }
 
-let check = 2;
+let check = 1;
+
+// сделал нормальное переключение темы
 
 function themeChange() {
-    const body = document.body;
-    const header = document.getElementById('header');
-    const main = document.getElementById('main');
-    const mainTitle = document.getElementById('mainTitle');
-    const arrowDown = document.getElementById('arrowDown');
-    const titleName = document.getElementById('titleName');
+    const link = document.getElementById('cssLink');
     if (check % 2 === 0) {
-        body.style.backgroundColor = 'white';
-        header.style.backgroundColor = 'black';
-        titleName.style.color = 'white';
-        Array.from(header.getElementsByTagName('a')).forEach((a) => {
-            a.style.color = 'white';
-        });
-        Array.from(header.getElementsByTagName('button')).forEach((button) => {
-            button.style.backgroundColor = 'white';
-        });
-        Array.from(header.getElementsByTagName('button')).forEach((button) => {
-            button.style.color = 'black';
-        });
-        Array.from(main.getElementsByTagName('h1')).forEach((h1) => {
-            h1.style.color = 'black';
-        });
-        Array.from(main.getElementsByTagName('img')).forEach((img) => {
-            img.style.borderColor = 'black';
-        });
-        Array.from(main.getElementsByTagName('button')).forEach((button) => {
-            button.style.backgroundColor = 'black';
-        });
-        Array.from(main.getElementsByTagName('button')).forEach((button) => {
-            button.style.color = 'white';
-        });
-        Array.from(mainTitle.getElementsByTagName('h2')).forEach((h2) => {
-            h2.style.color = 'black';
-        });
-        Array.from(arrowDown.getElementsByTagName('i')).forEach((i) => {
-            i.style.color = 'black';
-        });
+        link.setAttribute("href", "./lightTheme.css");
     } else {
-        body.style.backgroundColor = '#121212';
-        header.style.backgroundColor = '#1E1E1E';
-        titleName.style.color = 'LimeGreen';
-        Array.from(header.getElementsByTagName('a')).forEach((a) => {
-            a.style.color = 'LimeGreen';
-        });
-        Array.from(header.getElementsByTagName('button')).forEach((button) => {
-            button.style.backgroundColor = 'LimeGreen';
-        });
-        Array.from(header.getElementsByTagName('button')).forEach((button) => {
-            button.style.color = 'black';
-        });
-        Array.from(main.getElementsByTagName('h1')).forEach((h1) => {
-            h1.style.color = 'LimeGreen';
-        });
-        Array.from(main.getElementsByTagName('img')).forEach((img) => {
-            img.style.borderColor = 'white';
-        });
-        Array.from(main.getElementsByTagName('button')).forEach((button) => {
-            button.style.backgroundColor = 'LimeGreen';
-        });
-        Array.from(main.getElementsByTagName('button')).forEach((button) => {
-            button.style.color = 'white';
-        });
-        Array.from(mainTitle.getElementsByTagName('h2')).forEach((h2) => {
-            h2.style.color = 'LimeGreen';
-        });
-        Array.from(arrowDown.getElementsByTagName('i')).forEach((i) => {
-            i.style.color = 'LimeGreen';
-        });
+        link.setAttribute("href", "./main.css");
     }
     check++;
 }
@@ -130,7 +69,11 @@ function translatePage() {
         document.getElementById('pt6').innerHTML = 'Игра угадай слово';
         document.getElementById('pt7').innerHTML = 'Онлайн ковертаор криптовалют';
         document.getElementById('ptCalc').innerHTML = 'Калькулятор';
-
+        document.getElementById('pt8').innerHTML = 'Погодное приложение';
+        document.getElementById('pt9').innerHTML = 'Конструктор ПК';
+        document.getElementById('pt10').innerHTML = 'Проекты на реакт';
+        document.getElementById('pt11').innerHTML = 'Онлайн магазин наушников';
+        document.getElementById('pt12').innerHTML = 'Крипто-приложение';
     } else {
         document.getElementById('aboutModal').innerHTML = 'About me';
         document.getElementById('skillsModal').innerHTML = 'Skills';
@@ -149,6 +92,11 @@ function translatePage() {
         document.getElementById('pt6').innerHTML = 'Guess the word game';
         document.getElementById('pt7').innerHTML = 'Online cryptocurrency course';
         document.getElementById('ptCalc').innerHTML = 'Calculator';
+        document.getElementById('pt8').innerHTML = 'Online weather app';
+        document.getElementById('pt9').innerHTML = 'PC constructor online';
+        document.getElementById('pt10').innerHTML = 'Pet projects on React';
+        document.getElementById('pt11').innerHTML = 'Online headphone store';
+        document.getElementById('pt12').innerHTML = 'Cripto app';
     }
     translateCheck++;
 }
