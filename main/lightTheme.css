@@ -309,6 +309,19 @@ body {
     text-align: center;
 }
 
+.codeLogo {
+    margin-top: -240px;
+    text-align: right;
+    margin-right: 200px;
+    a {
+        color: black;
+        font-size: 200px;
+    }
+    a:hover {
+        color: grey;
+    }
+}
+
 .main {
     img {
         border: 2px solid black;
