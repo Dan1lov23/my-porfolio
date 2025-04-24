@@ -34,7 +34,7 @@ window.onclick = function(event) {
     }
 }
 
-let check = 1;
+let check = 0;
 
 // сделал нормальное переключение темы
 
@@ -56,6 +56,7 @@ function translatePage() {
         document.getElementById('skillsModal').innerHTML = 'Навыки';
         document.getElementById('contactsModal').innerHTML = 'Контакты';
         document.getElementById('about').innerHTML = 'О мне'
+        document.getElementById('aboutMain').innerHTML = 'Я — front-end веб-разработчик, постоянно развиваю свои профессиональные навыки и осваиваю новые технологии в своей области.';
         document.getElementById('skills').innerHTML = 'Мои навыки'
         document.getElementById('contacts').innerHTML = 'Контакты'
         document.getElementById('nameCreator').innerHTML = 'Святослав Данилов';
@@ -63,22 +64,20 @@ function translatePage() {
         document.getElementById('pt0').innerHTML = 'Мои проекты';
         document.getElementById('pt1').innerHTML = 'Генератор паролей';
         document.getElementById('pt2').innerHTML = 'Форма регистарции';
-        document.getElementById('pt3').innerHTML = 'Форма регистарции';
         document.getElementById('pt4').innerHTML = 'Список дел';
         document.getElementById('pt5').innerHTML = 'Игра змейка';
         document.getElementById('pt6').innerHTML = 'Игра угадай слово';
-        document.getElementById('pt7').innerHTML = 'Онлайн ковертаор криптовалют';
         document.getElementById('ptCalc').innerHTML = 'Калькулятор';
         document.getElementById('pt8').innerHTML = 'Погодное приложение';
         document.getElementById('pt9').innerHTML = 'Конструктор ПК';
         document.getElementById('pt10').innerHTML = 'Проекты на реакт';
         document.getElementById('pt11').innerHTML = 'Онлайн магазин наушников';
-        document.getElementById('pt12').innerHTML = 'Крипто-приложение';
     } else {
         document.getElementById('aboutModal').innerHTML = 'About me';
         document.getElementById('skillsModal').innerHTML = 'Skills';
         document.getElementById('contactsModal').innerHTML = 'Contacts';
         document.getElementById('about').innerHTML = 'About me';
+        document.getElementById('aboutMain').innerHTML = 'I am a front-end web developer, constantly developing my professional skills and mastering new technologies in my field.';
         document.getElementById('skills').innerHTML = 'My skills';
         document.getElementById('contacts').innerHTML = 'My contacts'
         document.getElementById('nameCreator').innerHTML = 'Svyatoslav Danilov';
@@ -86,17 +85,14 @@ function translatePage() {
         document.getElementById('pt0').innerHTML = 'My projects';
         document.getElementById('pt1').innerHTML = 'Password generator in veb';
         document.getElementById('pt2').innerHTML = 'Registration form';
-        document.getElementById('pt3').innerHTML = 'Registration form';
         document.getElementById('pt4').innerHTML = 'Todo list';
         document.getElementById('pt5').innerHTML = 'Snake game';
         document.getElementById('pt6').innerHTML = 'Guess the word game';
-        document.getElementById('pt7').innerHTML = 'Online cryptocurrency course';
         document.getElementById('ptCalc').innerHTML = 'Calculator';
         document.getElementById('pt8').innerHTML = 'Online weather app';
         document.getElementById('pt9').innerHTML = 'PC constructor online';
         document.getElementById('pt10').innerHTML = 'Pet projects on React';
         document.getElementById('pt11').innerHTML = 'Online headphone store';
-        document.getElementById('pt12').innerHTML = 'Cripto app';
     }
     translateCheck++;
 }
